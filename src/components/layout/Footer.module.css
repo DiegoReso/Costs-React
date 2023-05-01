@@ -1,0 +1,16 @@
+footer{
+  height: 50px;
+  margin-top:50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(129, 138, 5, 0.534);
+  display: flex;
+  flex-direction: column;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}

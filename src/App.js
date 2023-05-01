@@ -1,12 +1,12 @@
 import { BrowserRouter as Router,Routes,Route,Link } from "react-router-dom";
-import Contact from "./components/Contact";
-import Home from "./components/Home";
-import NewProject from "./components/NewProject";
-import About from "./components/About";
-import Footer from "./components/Footer";
-
+import Contact from "./components/pages/Contact";
+import Home from "./components/pages/Home";
+import NewProject from "./components/pages/NewProject";
+import About from "./components/pages/About";
+import Footer from "./components/layout/Footer";
+import Projects from "./components/pages/Projects";
 import Container from "./components/layout/Container";
-
+import Navbar from "./components/layout/Navbar";
 
 
 function App() {
@@ -15,41 +15,23 @@ function App() {
 <>
 
   <Router>
-   
-    <ul>
+  <Navbar/>
 
-      <li>
-        <Link to="/">Home</Link>
-      </li>
+  <Container customClass='min-height'>
 
-      <li>
-        <Link to="/contato">Contato</Link>
-      </li>
+    <Routes>
+      <Route exact path="/" element={<Home/>}></Route>
+      <Route  path="/contato" element={<Contact/>}></Route>
+      <Route  path="/sobre" element={<About/>}></Route>
+      <Route  path="/novoprojeto" element={<NewProject/>}></Route>
+      <Route  path="/projetos" element={<Projects/>}></Route>
+    </Routes>
 
-      <li>
-        <Link to="/sobre">Sobre</Link>
-      </li>
+  </Container>
 
-      <li>
-        <Link to="/novoprojeto">Novo Projeto</Link>
-      </li>
-
-    </ul>
-   
-    <Container customClass='min-height'>
-      <Routes>
-        
-          <Route exact path="/" element={<Home/>}></Route>
-          <Route  path="/contato" element={<Contact/>}></Route>
-          <Route  path="/sobre" element={<About/>}></Route>
-          <Route  path="/novoprojeto" element={<NewProject/>}></Route>
-        
-      </Routes>
-    </Container>
-
-    </Router>
+  </Router>
     
-    <Footer/>
+  <Footer/>
 </>
   );
 }
