@@ -4,10 +4,10 @@ import {FaFacebook,FaInstagram,FaLinkedin} from 'react-icons/fa'
 function Footer(){
   return(
     <footer>
-      <p>Diego Reis &copy; </p>
-      <ul>
+      <p className={style.text}>Diego Reis &copy; <span>2023</span> </p>
+      <ul className={style.listul}>
         <li>
-        <FaFacebook/>
+          <FaFacebook/>
         </li>
         <li>
         <FaInstagram/>
