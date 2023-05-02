@@ -10,11 +10,11 @@ footer{
 }
 
 .text{
-font-size: 1.2em;
+font-size: 0.9em;
 }
 
 .text span{
-  font-size: 0.5em;
+  font-size: 0.7em;
 }
 
 .listul{
@@ -22,7 +22,6 @@ font-size: 1.2em;
   list-style: none;
   gap: 15px;
   cursor: pointer;
- 
 }
 
 .listul li svg{
