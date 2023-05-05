@@ -10,6 +10,7 @@ function Input({type,text,name,placeholder,handleOnChange,value}){
       id={name} 
       placeholder={placeholder}
       value={value}
+      onChange={handleOnChange}
       />
     </div>
   )
