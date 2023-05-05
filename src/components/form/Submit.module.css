@@ -1,0 +1,21 @@
+.form_control{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  ;
+}
+
+
+
+.form_control button{
+  padding: 1em;
+  border-radius: 0;
+  border: 1px solid grey;
+  transition: 0.5s 
+}
+
+.form_control button:hover{
+  cursor: pointer;
+  color:  #ffbb33;
+  background-color: #7b7b7b;
+}
