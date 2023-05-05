@@ -20,7 +20,7 @@ function createPost(project){
   })
   .then((resp) => resp.json())
   .then(data => {
-    history('/projetos', {message : "Projeto criado com sucesso!"})
+    history("/projetos", {state: { message: "Projeto criado com sucesso!" }})
   })
   .catch((err) => console.log(err))
 

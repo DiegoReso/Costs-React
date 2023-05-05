@@ -6,3 +6,15 @@
   margin-bottom: 2em;
   border-radius:5px;
 }
+
+.success{
+  color: #0b6320;
+  background-color: rgb(158, 214, 153);
+  border-color: grey;
+}
+
+.error{
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: grey;
+}
