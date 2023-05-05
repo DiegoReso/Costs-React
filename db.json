@@ -1,92 +1,37 @@
 {
   "projects": [
     {
-      "name": "diego",
-      "budget": "345345",
+      "name": "Reforma Casa",
+      "budget": "5000",
       "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
+        "id": "1",
+        "name": "Infra"
       },
       "cost": 0,
       "services": [],
       "id": 1
     },
     {
-      "name": "sdfsdf",
-      "budget": "3454",
+      "name": "diego",
+      "budget": "34545",
       "category": {
-        "id": "1",
-        "name": "Infra"
+        "id": "3",
+        "name": "Design"
       },
       "cost": 0,
       "services": [],
       "id": 2
     },
     {
-      "name": "sdfsdf",
-      "budget": "4354545",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 3
-    },
-    {
-      "name": "diego",
-      "budget": "5345",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 4
-    },
-    {
-      "name": "sdfsdf",
-      "budget": "34534",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 5
-    },
-    {
-      "name": "sdfsdf",
-      "budget": "345",
+      "name": "Novo Projeto",
+      "budget": "3000",
       "category": {
         "id": "4",
         "name": "Planejamento"
       },
       "cost": 0,
       "services": [],
-      "id": 6
-    },
-    {
-      "name": "diego",
-      "budget": "3434",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 7
-    },
-    {
-      "name": "diego",
-      "budget": "4354",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 8
+      "id": 3
     }
   ],
   "categories": [

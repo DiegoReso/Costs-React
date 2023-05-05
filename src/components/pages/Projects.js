@@ -3,9 +3,12 @@ import { useLocation } from "react-router-dom"
 import styles from './Projects.module.css'
 import Container from "../layout/Container"
 import LinkButton from "../layout/LinkButton"
+import ProjectCard from "../projects/ProjectCard"
+import { useState,useEffect } from "react"
 
 function Projects(){
 
+  const [projects,setProjects] =useState([])
 
   const location = useLocation()
   let message = ''
@@ -14,6 +17,20 @@ function Projects(){
     message = location.state.message
   }
 
+
+    useEffect(()=>{
+
+      fetch("http://localhost:5000/projects",{
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }).then(resp => resp.json())
+      .then(data => {
+        setProjects(data)
+      })
+      .catch(err => console.log(err))
+    },[])
 
 
   return(
@@ -24,7 +41,15 @@ function Projects(){
       </div>
       { message &&  <Message msg={message} type="success"/>}
       <Container customClass="start">
-        <p>Projetos</p>
+        {projects.length > 0 &&
+          projects.map((project) => <ProjectCard
+            name={project.name}
+            id={project.id}
+            budget={project.budget}
+            category={project.category.name}
+            key={project.id}
+            />
+          )}
       </Container>
     </div>
   )
