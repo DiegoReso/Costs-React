@@ -7,13 +7,31 @@
         "id": "3",
         "name": "Design"
       },
-      "cost": 1,
+      "cost": 4,
       "services": [
         {
           "name": "wrwer",
           "cost": "1",
           "description": "saddf",
           "id": "ab930f04-0a82-41db-8848-78b151dbe4dc"
+        },
+        {
+          "name": "Novo Servico",
+          "cost": "1",
+          "description": "Servivaco brabo",
+          "id": "bd55dc97-e0b2-4185-bbd7-0336def8bd7f"
+        },
+        {
+          "name": "teste",
+          "cost": "1",
+          "description": "1",
+          "id": "213013ed-2d0b-46ff-92d5-90a6b324da67"
+        },
+        {
+          "name": "PNOvao",
+          "cost": "1",
+          "description": "VRAUUU",
+          "id": "676687fc-2fcb-41c3-a8e3-42e74238a369"
         }
       ],
       "id": 1

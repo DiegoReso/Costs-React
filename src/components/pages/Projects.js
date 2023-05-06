@@ -7,6 +7,8 @@ import ProjectCard from "../projects/ProjectCard"
 import { useState,useEffect } from "react"
 import Load from "../layout/Load"
 
+
+
 function Projects(){
 
   const [projects,setProjects] =useState([])
