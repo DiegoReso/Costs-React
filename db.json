@@ -7,8 +7,15 @@
         "id": "3",
         "name": "Design"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 1,
+      "services": [
+        {
+          "name": "wrwer",
+          "cost": "1",
+          "description": "saddf",
+          "id": "ab930f04-0a82-41db-8848-78b151dbe4dc"
+        }
+      ],
       "id": 1
     },
     {
